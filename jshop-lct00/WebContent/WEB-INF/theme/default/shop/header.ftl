@@ -31,7 +31,7 @@
 										你好[${Session.user.username}]
 									<#else>
 									<a href="${basepath}<@snl.htmlPath?interpret />"
-									<#if snl.isTargetBlank="1"> </#if> >${snl.name}
+									<#if snl.isTargetBlank="1"> target="_blank"</#if> >${snl.name}
 									</a>
 									</#if>
 								</li>
@@ -42,7 +42,7 @@
 									<#if snl.position="1">
 									<li>
 										<a href="${basepath}<@snl.htmlPath?interpret />"
-										<#if snl.isTargetBlank="1"> </#if> >${snl.name}
+										<#if snl.isTargetBlank="1"> target="_blank"</#if> >${snl.name}
 										</a>
 									</li>
 									</#if>

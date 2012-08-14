@@ -46,18 +46,14 @@
 		<!-- logo -->
 		<div id="logo">
 			<h1>
-				欧斯塔克网络商城管理系统
+				荔餐厅电子菜单管理系统
 			</h1>
 		</div>
 		<!-- end logo -->
 		<!-- user -->
 		<ul id="user">
-			<li class="first">
-				<a href="<%=basePathb%>jshop/admin/member/editmember.jsp?session=6584359BA964336B9BDE75737952F5AA">账号（管理员）</a>
-			</li>
-			<li>
-				<a href="<%=basePathb%>jshop/admin/order/orderstobeshipped.jsp?session=6584359BA964336B9BDE75737952F5AA">信息中心 (0)</a>
-			</li>
+			
+			
 			<li>
 				<a href="adminLogout">登出</a>
 			</li>

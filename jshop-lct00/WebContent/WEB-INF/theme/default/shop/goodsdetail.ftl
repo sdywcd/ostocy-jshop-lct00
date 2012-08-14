@@ -72,11 +72,11 @@
           <div class="detail_info_lm1">
             <div class="bigpro">
               <div id="myImagesSlideBox" class="myImagesSlideBox">
-                <div class="myImages"> <#list goodsdetail.pictureurl?split(",") as img> <img src="${img}" class="myImgs" bigimg="${img}"  jqimg="${img}"></img> </#list> </div>
+                <div class="myImages"> <#list goodsdetail.pictureurl?split(",") as img> <img src="${basepath}${img}" class="myImgs" bigimg="${basepath}${img}"  jqimg="${basepath}${img}"></img> </#list> </div>
                 <div class="myTxts"> <a href="#">在新窗口查看大图.</a> </div>
                 <div id="scrollable"> <a class="prev" href="#" title="上一张"></a>
                   <div class="items" >
-                    <div class="scrollableDiv"> <#list goodsdetail.pictureurl?split(",") as img> <a><img src="${img}" imgb="${img}"  bigimg="${img}" ></a> </#list> </div>
+                    <div class="scrollableDiv"> <#list goodsdetail.pictureurl?split(",") as img> <a><img src="${basepath}${img}" imgb="${basepath}${img}"  bigimg="${basepath}${img}" ></a> </#list> </div>
                     <br clear="all"/>
                   </div>
                   <a class="next" href="#" title="下一张"></a> </div>
@@ -135,16 +135,7 @@
             </div>
             </#if>
             <div class="rm3_3">
-			<#if goodsdetail.isvirtual=='1'>
-				<#if goodsdetail.goodsTypeName='充值卡'>
-				 <input onClick="addtovirtualgoodscart(${goodsdetail.goodsid});" type="button" name="addcart" id="addcart" value="" style="cursor:pointer;"/>
-				<#else>
-				<input onClick="addtovirtualgoodsmovie(${goodsdetail.goodsid});" type="button" name="addcart" id="addcart" value="" style="cursor:pointer;"/>
-				
-				</#if>
-            <#else>
 			 <input onClick="addcart();" type="button" name="addcart" id="addcart" value="" style="cursor:pointer;"/>
-			</#if>
               <input onClick="addfav();" type="button" name="addfav" id="addfav" value="" style="cursor:pointer;"/>
               <span id="addfavok"></span>
 
