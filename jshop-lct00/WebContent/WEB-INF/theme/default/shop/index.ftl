@@ -56,10 +56,9 @@
                 </div>
               </div>
             </li>
-			<#if firstGoodsCategory_index+1==goodscategorytreefirstcount>
-            <#break/>
             </#if>
-           
+            <#if firstGoodsCategory_index+1==goodscategorytreefirstcount>
+            <#break/>
             </#if>
             </#list>
           </ul>
