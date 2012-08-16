@@ -54,5 +54,7 @@ $(function(){
 });
 
 /*===========================================Gorgeous split-line==============================================*/
-
+function createSqlite(){
+	$.post("createTable.action");
+}
 
