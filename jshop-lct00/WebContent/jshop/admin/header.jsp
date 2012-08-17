@@ -69,7 +69,7 @@
 			<!-- quick -->
 			<ul id="quick">
 			<li>
-					<a href="#" onclick="createSqlite()"><span class="normal">同步SQLite数据库</span>
+					<a href="" onclick="createSqlite()"><span class="normal">同步SQLite数据库</span>
 					</a>
 					
 				</li>
