@@ -52,7 +52,9 @@ public class SqliteAction extends SQLiteDBHelper {
 			//
 			st.executeUpdate("drop table if exists table_tm");
 			st.executeUpdate("create table table_tm(_id integer primary key autoincrement,tableid text,tableNumber text,roomName text,androidDevicesCount text,note text,createtime text,nop text,tablestate text,floor text,rnop text)");
-			
+			//创建电子餐车表
+			st.executeUpdate("drop table if exists ele_cart_tm");
+			st.executeUpdate("create table ele_cart_tm(_id integer primary key autoincrement,goodsid text,goodsname text,memberprice text,needquantity text,pictureurl text)");
 			List<GoodsT> list = this.getGoodsTService().findAllGoodsByNoTerm();
 			List<GoodsCategoryT> l=this.getGoodsCategoryTService().findAllCategoryByNoTrem();
 			for(GoodsT goods:list){
