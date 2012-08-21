@@ -23,6 +23,7 @@ import com.jshop.service.GoodsTService;
 public class SqliteAction extends SQLiteDBHelper {
 	private GoodsTService goodsTService;
 	private GoodsCategoryTService goodsCategoryTService;
+	private boolean sqlite=false;
 	
 	@JSON(serialize = false)
 	public GoodsTService getGoodsTService() {
@@ -37,6 +38,13 @@ public class SqliteAction extends SQLiteDBHelper {
 	}
 	public void setGoodsCategoryTService(GoodsCategoryTService goodsCategoryTService) {
 		this.goodsCategoryTService = goodsCategoryTService;
+	}
+	
+	public boolean isSqlite() {
+		return sqlite;
+	}
+	public void setSqlite(boolean sqlite) {
+		this.sqlite = sqlite;
 	}
 	@Action(value="createTable",results={@Result(name="json",type="json")})
 	public String createTable() throws SQLException{
@@ -62,12 +70,13 @@ public class SqliteAction extends SQLiteDBHelper {
 			}
 			for(GoodsCategoryT category :l){
 				st.executeUpdate("insert into goods_category_tm(goodsCategoryTid,grade,name,goodsTypeId,sort)values('"+category.getGoodsCategoryTid()+"','"+category.getGrade()+"','"+category.getName()+"','"+category.getGoodsTypeId()+"','"+category.getSort()+"')");
-			}
+			}		
 			st.close();
-			conn.close();
-		} catch (SQLException e) {
+			conn.close();					
+		} catch (SQLException e) {			
 			throw e;
 		}
+		this.setSqlite(true);
 		return "json";
 	}
 }
