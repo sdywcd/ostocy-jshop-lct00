@@ -69,7 +69,7 @@
 							<li class="ui-state-default ui-corner-top">
 								<a href="#box-detail">描述</a>
 							</li>
-							<li class="ui-state-defautl ui-corner-top">
+							<!--  <li class="ui-state-defautl ui-corner-top">
 								<a href="#box-commoditylist">清单信息</a>
 							</li>
 							<li class="ui-state-default ui-corner-top">
@@ -86,7 +86,7 @@
 							</li>
 							<li class="ui-state-default ui-corner-top">
 								<a href="#box-virtualresults">虚拟商品</a>
-							</li>
+							</li>-->
 							<li class="ui-state-default ui-corner-top">
 								<a href="#box-submit">提交信息</a>
 							</li>
@@ -99,7 +99,7 @@
 								<div class="field field-first">
 									<div class="label">
 										<label for="input-small">
-											商品所在分类:
+											菜品所在分类:
 										</label>
 									</div>
 									<div class="input">
@@ -121,7 +121,7 @@
 									<div class="field">
 										<div class="label">
 											<label for="select">
-												选择商品所属分类:
+												选择菜品所属分类:
 											</label>
 										</div>
 										<div class="select">
@@ -147,7 +147,7 @@
 								<div class="field">
 									<div class="label">
 										<label for="input-medium">
-											商品名称:
+											菜品名称:
 										</label>
 									</div>
 									<div class="input">
@@ -180,7 +180,7 @@
 								<div class="field">
 									<div class="label">
 										<label for="select">
-											商品品牌:
+											菜品品牌:
 										</label>
 									</div>
 									<div class="select">
@@ -205,7 +205,7 @@
 								<div class="field">
 									<div class="label">
 										<label for="input-small">
-											会员价:
+											会员价（实际售价）:
 										</label>
 									</div>
 									<div class="input">
@@ -426,7 +426,7 @@
 								<div class="field">
 									<div class="label">
 										<label for="file">
-											主图片:
+											菜品主图片:
 										</label>
 									</div>
 									<div class="input input-file">
@@ -455,7 +455,7 @@
 								<div class="field">
 									<div class="label label-textarea">
 										<label for="textarea">
-											商品描述:
+											菜品用料描述:
 										</label>
 									</div>
 									<div style="margin: 0 0 0 200px;">
