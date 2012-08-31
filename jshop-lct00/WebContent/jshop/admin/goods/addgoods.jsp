@@ -74,7 +74,7 @@
 							<li class="ui-state-default ui-corner-top">
 								<a href="#box-detail">描述</a>
 							</li>
-							<li class="ui-state-defautl ui-corner-top">
+							<!-- <li class="ui-state-defautl ui-corner-top">
 								<a href="#box-commoditylist">清单信息</a>
 							</li>
 							<li class="ui-state-default ui-corner-top">
@@ -91,7 +91,7 @@
 							</li>
 							<li class="ui-state-default ui-corner-top">
 								<a href="#box-virtualresults">虚拟商品</a>
-							</li>
+							</li> -->
 							<li class="ui-state-default ui-corner-top">
 								<a href="#box-submit">提交信息</a>
 							</li>
@@ -104,7 +104,7 @@
 								<div class="field field-first">
 									<div class="label">
 										<label for="select">
-											选择商品所属分类:
+											选择菜品所属分类:
 										</label>
 									</div>
 									<div class="select">
@@ -128,7 +128,7 @@
 								<div class="field">
 									<div class="label">
 										<label for="input-medium">
-											商品名称:
+											菜品名称:
 										</label>
 									</div>
 									<div class="input">
@@ -143,7 +143,7 @@
 										</label>
 									</div>
 									<div class="input">
-										<input id="usersetnum" name="usersetnum" type="text" class="small" reg="^\d{4,20}$" tip="编号要是4位-20位数字之间"></input>
+										<input id="usersetnum" name="usersetnum" type="text" value="lct000" class="small" reg="^\d{4,20}$" tip="编号要是4位-20位数字之间"></input>
 									</div>
 
 								</div>
@@ -154,14 +154,14 @@
 										</label>
 									</div>
 									<div class="input">
-										<input id="productSn" name="productSn" type="text" class="small"></input>
+										<input id="productSn" name="productSn" value="lct000" type="text" class="small"></input>
 									</div>
 
 								</div>
 								<div class="field">
 									<div class="label">
 										<label for="select">
-											商品品牌:
+											菜品品牌:
 										</label>
 									</div>
 									<div class="select">
@@ -186,7 +186,7 @@
 								<div class="field">
 									<div class="label">
 										<label for="input-small">
-											会员价:
+											会员价（实际售价）:
 										</label>
 									</div>
 									<div class="input">
@@ -238,7 +238,7 @@
 										</label>
 									</div>
 									<div class="input">
-										<input type="text" id="quantity" name="quantity" value="0" class="small" />
+										<input type="text" id="quantity" name="quantity" value="99999" class="small" />
 									</div>
 								</div>
 								<div class="field">
@@ -259,7 +259,7 @@
 										</label>
 									</div>
 									<div class="input">
-										<input type="text" id="placeStore" name="placeStore" value="" class="small" />
+										<input type="text" id="placeStore" name="placeStore" value="0" class="small" />
 									</div>
 								</div>
 								<div class="field">
@@ -407,7 +407,7 @@
 								<div class="field field-first">
 									<div class="label">
 										<label for="file">
-											主图片:
+											菜品主图片:
 										</label>
 									</div>
 									<div class="input input-file">
@@ -436,7 +436,7 @@
 								<div class="field">
 									<div class="label label-textarea">
 										<label for="textarea">
-											商品描述:
+											菜品用料:
 										</label>
 									</div>
 									<div style="margin: 0 0 0 200px;">
