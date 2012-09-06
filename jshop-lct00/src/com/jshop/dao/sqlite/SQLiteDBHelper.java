@@ -8,7 +8,7 @@ public class SQLiteDBHelper {
 
 	public static final String DRIVERCLASS="org.sqlite.JDBC";
 	
-	public static final String FILENAME="c:/jshopmactive.db";
+	public static final String FILENAME="jshopmactive.db";
 	protected Connection conn;
 	
 	static{
