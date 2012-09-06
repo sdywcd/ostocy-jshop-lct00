@@ -24,6 +24,7 @@ public class SqliteAction extends SQLiteDBHelper {
 	private GoodsTService goodsTService;
 	private GoodsCategoryTService goodsCategoryTService;
 	private boolean sqlite=false;
+	private String path;
 	
 	@JSON(serialize = false)
 	public GoodsTService getGoodsTService() {
@@ -46,10 +47,16 @@ public class SqliteAction extends SQLiteDBHelper {
 	public void setSqlite(boolean sqlite) {
 		this.sqlite = sqlite;
 	}
+	public String getPath() {
+		return path;
+	}
+	public void setPath(String path) {
+		this.path = path;
+	}
 	@Action(value="createTable",results={@Result(name="json",type="json")})
 	public String createTable() throws SQLException{
 		try {
-			conn=DriverManager.getConnection("jdbc:sqlite:"+FILENAME);
+			conn=DriverManager.getConnection("jdbc:sqlite:"+this.getPath()+FILENAME);
 			Statement st =  conn.createStatement();
 			//创建商品分类表
 			st.executeUpdate("drop table if exists goods_category_tm");			

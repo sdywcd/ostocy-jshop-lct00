@@ -69,7 +69,7 @@
 			<!-- quick -->
 			<ul id="quick">
 			<li>
-					<a href="" onclick="createSqlite()"><span class="normal">同步SQLite数据库</span>
+					<a href="<%=basePathb%>jshop/admin/activity/sqlite.jsp?session=6584359BA964336B9BDE75737952F5AA" title="lab" ><span class="normal">同步SQLite数据库</span>
 					</a>
 					
 				</li>
